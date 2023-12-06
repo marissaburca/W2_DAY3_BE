@@ -7,6 +7,19 @@ public class Customer {
     String name;
     Integer tier;
 
+    public Integer getTier () {
+        return tier;
+    }
+
+    @Override
+    public String toString () {
+        return "id=" + id + ", name=" + name + ", tier=" + tier ;
+    }
+
+    public String getName () {
+        return name;
+    }
+
     public Customer ( String name, Integer tier ) {
         this.id = generateRandomId();
         this.name = name;

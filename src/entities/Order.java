@@ -11,6 +11,23 @@ public class Order {
     List<Product> products;
     Customer customer;
 
+    public LocalDate getOrderDate () {
+        return orderDate;
+    }
+    public Customer getCustomer () {
+        return customer;
+    }
+
+
+    @Override
+    public String toString () {
+        return "Order " + "id=" + id + ", status=" + status + ", orderDate=" + orderDate  + ", customer=" + customer ;
+    }
+
+    public List<Product> getProducts () {
+        return products;
+    }
+
     public Order ( Status status, LocalDate orderDate, LocalDate deliveryDate, List<Product> products, Customer customer ) {
         this.id = generateRandomId();
         this.status = status;

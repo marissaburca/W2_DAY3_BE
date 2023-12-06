@@ -14,6 +14,7 @@ public class Product {
     Category category;
     Double price;
 
+
     public Product ( String name, Category category, Double price ) {
         this.id = generateRandomId();
         this.name = name;
