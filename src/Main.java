@@ -3,8 +3,6 @@ import entities.Product;
 import java.util.Arrays;
 import java.util.List;
 
-import java.time.LocalDate;
-
 public class Main {
     public static void main ( String[] args ) {
         Product[] products ={
